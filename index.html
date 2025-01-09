@@ -1,49 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan Analisis WhatsApp Group</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TUGAS SEBELUM UTS</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        h2 {
-            color: #444;
-        }
-        h3 {
-            color: #555;
-            margin-top: 20px;
-        }
-        section {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
         table, th, td {
-            border: 1px solid #ddd;
+            border: 1px solid #100f0f;
         }
         th, td {
             padding: 12px;
@@ -52,120 +20,198 @@
         th {
             background-color: #f1f1f1;
         }
-        img {
-            width: 100%;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            background-color: #f1f1f1;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            margin: 0;
-        }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Laporan Analisis Konten WhatsApp Group</h1>
-        <p>Nama: Tuhu Atmana | Nim: L200220244</p>
-    </header>
-
-    <section>
-        <h2>Pendahuluan</h2>
-        <p>Analisis ini dilakukan untuk mengelompokkan pesan dari grup WhatsApp berdasarkan isi pesan. Data terdiri dari log pesan yang diekspor dari beberapa grup WhatsApp, yang dianalisis menggunakan teknik <i>clustering</i>.</p>
-
-        <h2>Proses Analisis</h2>
-        <ol>
-            <li><b>Preprocessing:</b> Data teks diubah menjadi representasi numerik menggunakan TF-IDF.</li>
-            <li><b>Clustering:</b> Pesan dikelompokkan menjadi 3, 4, dan 5 cluster menggunakan algoritma k-Means.</li>
-        </ol>
-
-        <h2>Hasil Clustering</h2>
-
-        <h3>Clusters 3</h3>
-        <table>
-            <tr>
-                <th>Cluster</th>
-                <th>Kata Kunci</th>
-            </tr>
-            <tr>
-                <td>Cluster 0</td>
-                <td>ti, wis, si</td>
-            </tr>
-            <tr>
-                <td>Cluster 1</td>
-                <td>grup, pengaturan, nasi</td>
-            </tr>
-            <tr>
-                <td>Cluster 2</td>
-                <td>sutan, arwi, menambahkan</td>
-            </tr>
-        </table>
-
-        <h3>Clusters 4</h3>
-        <table>
-            <tr>
-                <th>Cluster</th>
-                <th>Kata Kunci</th>
-            </tr>
-            <tr>
-                <td>Cluster 0</td>
-                <td>si, atmana, l200220244tuhu</td>
-            </tr>
-            <tr>
-                <td>Cluster 1</td>
-                <td>grup, pengaturan, nasi</td>
-            </tr>
-            <tr>
-                <td>Cluster 2</td>
-                <td>sutan, arwi, menambahkan</td>
-            </tr>
-            <tr>
-                <td>Cluster 3</td>
-                <td>ti, wis, siapp</td>
-            </tr>
-        </table>
-
-        <h3>Clusters 5</h3>
-        <table>
-            <tr>
-                <th>Cluster</th>
-                <th>Kata Kunci</th>
-            </tr>
-            <tr>
-                <td>Cluster 0</td>
-                <td>si, atmana, l200220244tuhu</td>
-            </tr>
-            <tr>
-                <td>Cluster 1</td>
-                <td>grup, pengaturan, nasi</td>
-            </tr>
-            <tr>
-                <td>Cluster 2</td>
-                <td>sutan, arwi, menambahkan</td>
-            </tr>
-            <tr>
-                <td>Cluster 3</td>
-                <td>ti, wis, siapp</td>
-            </tr>
-            <tr>
-                <td>Cluster 4</td>
-                <td>23, media, tidak</td>
-            </tr>
-        </table>
-
-        <h2>Kesimpulan</h2>
-        <p>Hasil clustering pesan menunjukkan adanya pembagian yang cukup jelas berdasarkan topik atau konteks percakapan dalam dataset. Pada cluster pertama, pesan-pesan lebih cenderung menggunakan kata-kata umum seperti "ti," "wis," dan "si," yang mungkin mencerminkan percakapan ringan atau tidak terlalu spesifik. Cluster kedua, di sisi lain, berfokus pada kata-kata seperti "grup," "pengaturan," dan "nasi," yang menunjukkan bahwa percakapan ini lebih terorganisir dan berkaitan dengan topik grup atau acara tertentu. Cluster ketiga mengandung kata-kata seperti "sutan," "arwi," dan "menambahkan," yang bisa menandakan percakapan yang lebih personal atau spesifik terkait dengan individu atau aktivitas tertentu dalam grup. Dengan meningkatnya jumlah cluster menjadi empat atau lima, distribusi kata kunci menunjukkan keragaman topik percakapan, mulai dari hal-hal teknis seperti "atmana" dan "l200220244tuhu," hingga topik umum lainnya seperti "media" dan "tidak," yang mengindikasikan adanya variasi dalam konteks diskusi yang terjadi dalam grup.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Laporan Analisis WhatsApp Group. Semua hak dilindungi.</p>
-    </footer>
-</body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="row justify-content-center my-3">
+        <div class="col-md-7">
+            <h1 class="text-primary">Tuhu Atmana</h1>
+            <h2>NIM : L200220244</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Tugas Sebelum UTS
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                        <p>
+                            <strong>
+                                Membuat metaflow
+                            </strong>
+                            Langkah-langkah kuliah informatika
+                        </p>
+                            <strong>Deskripsi Proyek</strong>
+                            <p>
+                              Proyek isi adalah bagian dari tugas perkuliahan yang menggunakan Metaflow untuk membuat pipeline yang mengilustrasikan proses perkuliahan.
+                              Pipeline ini mensimulasikan tahapan mulai dari pembayaran SPP, mengikuti perkuliahan, mengikuti Ujian Tengah Semester, mengikuti Ujian Akhir Semester, hingga menghitung nilai akhir.
+                            </p>
+                            <p>
+                                Ringkasan Alur:</br>
+                                1. Start: Bayar SPP</br>
+                                2. Daftar Mata Kuliah</br>
+                                3. Ikut Kuliah</br>
+                                4. Ujian</br>
+                                5. End: Menampilkan Nilai Akhir
+                            </p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        Kode Program
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <iframe src="media/kode.txt" width="100%" height="400"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                      Hasil
+                                    <img src="" alt="">
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <img src="media/UTS1.png" alt="" style="width: 100%;" height="100%">
+                                        <img src="media/UTS2.png" alt="" style="width: 100%;" height="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="accordion mt-2" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Tugas Sebelum UAS
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <strong>
+                              Membuat Clustering Dari Group WHATSAPP
+                            </strong>
+                            <h3>
+                                Deskripsi Proyek
+                            </h3>
+                            <p>
+                                Proyek ini bertujuan untuk menganalisis dan mengelompokkan konten percakapan dari beberapa grup WhatsApp menggunakan teknik data clustering. 
+                                Tujuan akhir dari analisis ini adalah untuk menemukan pola atau topik yang sering dibahas dalam grup-grup WhatsApp dan mengelompokkan pesan-pesan yang memiliki kesamaan berdasarkan kata-kata yang digunakan.
+                            </p>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Kode Program
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <iframe src="media/clustering.txt" width="100%" height="400"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                  Hasil
+                                <img src="" alt="">
+                              </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <img src="media/UAS1.png" alt="" style="width: 100%;" height="100%">
+                                    <img src="media/UAS2.png" alt="" style="width: 45%;" height="45%">
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Proses Analisis</h2>
+                        <ol>
+                            <li><b>Preprocessing:</b> Data teks diubah menjadi representasi numerik menggunakan TF-IDF.</li>
+                            <li><b>Clustering:</b> Pesan dikelompokkan menjadi 3, 4, dan 5 cluster menggunakan algoritma k-Means.</li>
+                        </ol>
+                        <h2>Hasil Clustering</h2>
+                        <h3>Clusters 3</h3>
+                        <table>
+                            <tr>
+                                <th>Cluster</th>
+                                <th>Kata Kunci</th>
+                            </tr>
+                            <tr>
+                                <td>Cluster 0</td>
+                                <td>ti, wis, ra</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 1</td>
+                                <td>grup, pengaturan, membuat</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 2</td>
+                                <td>arwi, sutan, menambahkan</td>
+                            </tr>
+                        </table>
+                        <h3>Clusters 4</h3>
+                        <table>
+                            <tr>
+                                <th>Cluster</th>
+                                <th>Kata Kunci</th>
+                            </tr>
+                            <tr>
+                                <td>Cluster 0</td>
+                                <td>si, perlu, ketupat</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 1</td>
+                                <td>grup, pengaturan, membuat</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 2</td>
+                                <td>arwi, sutan, menambahkan</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 3</td>
+                                <td>ti, wis, betulll</td>
+                            </tr>
+                        </table>
+                        <h3>Clusters 5</h3>
+                        <table>
+                            <tr>
+                                <th>Cluster</th>
+                                <th>Kata Kunci</th>
+                            </tr>
+                            <tr>
+                                <td>Cluster 0</td>
+                                <td>si, perlu, ketupat</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 1</td>
+                                <td>grup, pengaturan, membuat</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 2</td>
+                                <td>arwi, sutan, menambahkan</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 3</td>
+                                <td>ti, wis, kurrrr</td>
+                            </tr>
+                            <tr>
+                                <td>Cluster 4</td>
+                                <td>23, tidak, disertakan</td>
+                            </tr>
+                        </table>
+                        <h2>Kesimpulan</h2>
+                        <p>Hasil clustering pesan menunjukkan adanya pembagian yang cukup jelas berdasarkan topik atau konteks percakapan dalam dataset. Pada cluster pertama, pesan-pesan lebih cenderung menggunakan kata-kata umum seperti "ti," "wis," dan "si," yang mungkin mencerminkan percakapan ringan atau tidak terlalu spesifik. Cluster kedua, di sisi lain, berfokus pada kata-kata seperti "grup," "pengaturan," dan "nasi," yang menunjukkan bahwa percakapan ini lebih terorganisir dan berkaitan dengan topik grup atau acara tertentu. Cluster ketiga mengandung kata-kata seperti "sutan," "arwi," dan "menambahkan," yang bisa menandakan percakapan yang lebih personal atau spesifik terkait dengan individu atau aktivitas tertentu dalam grup. Dengan meningkatnya jumlah cluster menjadi empat atau lima, distribusi kata kunci menunjukkan keragaman topik percakapan, mulai dari hal-hal teknis seperti "atmana" dan "l200220244tuhu," hingga topik umum lainnya seperti "media" dan "tidak," yang mengindikasikan adanya variasi dalam konteks diskusi yang terjadi dalam grup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
